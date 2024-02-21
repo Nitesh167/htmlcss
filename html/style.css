@@ -1,0 +1,228 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  color: #0d6aad;
+}
+
+.navbar {
+    /* Background with gradient and subtle shadow */
+    background: linear-gradient(to right, #28a745, #007bff);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbar-brand {
+    /* Logo customization */
+    font-family: "Roboto Slab", serif; /* Choose a different font */
+    font-size: 1.5rem; /* Adjust font size */
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .navbar-nav .nav-link {
+    /* Menu item styling */
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px; /* Subtle letter spacing */
+    padding: 0.5rem 1rem; /* Adjust padding */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    /* Hover animation and color change */
+    color: #d6f0dc;
+    transform: scale(1.1);
+  }
+  
+  .navbar-nav .nav-link.active {
+    /* Highlight active item */
+    color: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  
+  
+  
+  
+
+
+
+
+#shop {
+    text-align: center; /* Center product section heading */
+}
+
+#shop h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out; /* Hover effects */
+}
+
+.card:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    object-fit: cover; /* Fill image container while maintaining aspect ratio */
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    color: #777;
+    line-height: 1.5;
+}
+
+.btn-primary {
+    background-color: #3498db; /* Customize button color as needed */
+}
+
+.banner {
+    background-color: #f2f2f2; /* Optional background color */
+    height: 100vh; /* Sets height to 100% of viewport height */
+    padding: 50px 0; /* Add some padding for spacing */
+  }
+  
+  .banner-image {
+    margin-left: 50px; /* Adjust horizontal positioning */
+    animation: fade-in 2s ease-in-out; /* Add a fade-in animation */
+  }
+  
+  
+  .banner h1,
+  .banner p {
+    animation: text-reveal 1s forwards;
+  }
+  
+  @keyframes text-reveal {
+    from {
+      letter-spacing: 5px;
+      opacity: 0;
+    }
+    to {
+      letter-spacing: 0;
+      opacity: 1;
+    }
+  }
+  
+  /* Optional font size adjustments */
+  .banner h1 {
+    font-size: 3em;
+  }
+  
+  .banner p {
+    font-size: 1.5em;
+    line-height: 1.5;
+  }
+  
+  /* Optional text shadow for depth */
+  .banner h1,
+  .banner p {
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+/* About Page Styles */
+.about-page {
+    margin-top: 40px;
+  }
+  
+  .about-page h2 {
+    color: #007bff;
+  }
+  
+  .about-page h3 {
+    margin-top: 30px;
+    color: #28a745;
+  }
+  
+  .about-page p {
+    line-height: 1.6;
+  }
+  
+  /* Team Member Card */
+  .card {
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-body h4 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .card-body p {
+    color: #666;
+  }
+  
+  /* Mission & Values List */
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  li strong {
+    color: #dc3545;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .navbar-brand {
+      font-size: 1.3rem;
+    }
+  
+    .card {
+      margin-bottom: 15px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .navbar-brand {
+      font-size: 1.2rem;
+    }
+  
+    .card-body {
+      padding: 15px;
+    }
+  }
+/* Responsive grid adjustments */
+@media (max-width: 768px) {
+    .col-lg-3 {
+        flex: 0 0 50%; /* Adjust column width for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .col-md-4 {
+        flex: 0 0 100%; /* Single column on extra small screens */
+    }
+}
